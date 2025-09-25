@@ -1,8 +1,11 @@
-import { pageLinks, socialLinks } from "../Data";
+import PageLinks from "./PageLinks";
+import SocialLinks from "./SocialLinks";
+
 function Footer() {
   return (
     <footer className="section footer">
-      <ul className="footer-links">
+      <PageLinks parentClass="footer-links" itemClass="footer-link" />
+      {/* <ul className="footer-links">
         {pageLinks.map((link) => {
           const { id, href, tex } = link;
           return (
@@ -13,8 +16,9 @@ function Footer() {
             </li>
           );
         })}
-      </ul>
-      <ul className="footer-icons">
+      </ul> */}
+      <SocialLinks parentClass="footer-icons" itemClass="footer-icon" />
+      {/* <ul className="footer-icons">
         {socialLinks.map((link) => {
           const { id, href, icon } = link;
           return (
@@ -30,7 +34,7 @@ function Footer() {
             </li>
           );
         })}
-      </ul>
+      </ul> */}
       <p className="copyright">
         copyright &copy; Backroads travel tours company
         <span id="date">{new Date().getFullYear()}</span> all rights reserved

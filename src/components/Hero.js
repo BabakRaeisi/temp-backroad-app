@@ -2,10 +2,10 @@ function Hero() {
   return (
     <section className="hero" id="home">
       <div className="hero-banner">
-        <h1>continue exploring</h1>
+        <h1>My Adventure</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-          explicabo debitis est autem dicta.
+          This a demo project for tours and travel website. Explore the world
+          with us.
         </p>
         <a href="#tours" className="btn hero-btn">
           explore tours
